@@ -6,6 +6,8 @@ use Alura\Calisthenics\Domain\Student\Student;
 use Alura\Calisthenics\Domain\Video\Video;
 use PHPUnit\Framework\TestCase;
 
+require 'vendor/autoload.php';
+
 class StudentTest extends TestCase
 {
     private Student $student;

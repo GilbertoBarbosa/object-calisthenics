@@ -4,6 +4,7 @@
             "Alura\\Calisthenics\\": "src/"
         }
     },
+    
     "autoload-dev": {
         "psr-4": {
             "Alura\\Calisthenics\\Tests\\": "tests/"
