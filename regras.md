@@ -11,6 +11,10 @@
 
 5. Coleções de primeira classe
 
+6. Apenas 1 "ponto" por linha
+
+7. Nunca abrevie
+
 
 ## Instalar php-ds
 pecl install ds
