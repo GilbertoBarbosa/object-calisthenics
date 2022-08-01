@@ -4,6 +4,7 @@ namespace Alura\Calisthenics\Tests\Unit\Domain\Student;
 
 use Alura\Calisthenics\Domain\Student\Student;
 use Alura\Calisthenics\Domain\Video\Video;
+use Alura\Calisthenics\Domain\Email\Email;
 use PHPUnit\Framework\TestCase;
 
 require 'vendor/autoload.php';
@@ -15,7 +16,7 @@ class StudentTest extends TestCase
     protected function setUp(): void
     {
         $this->student = new Student(
-            'email@example.com',
+            new Email('email@example.com'),
             new \DateTimeImmutable('1997-10-15'),
             'Vinicius',
             'Dias',

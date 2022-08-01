@@ -7,6 +7,10 @@
 
 3. NUNCA use ELSE
 
+4. Envolva seus tipos primitivos (caso ele possuam comportamento)
+
+5. Coleções de primeira classe
+
 
 ## Instalar php-ds
 pecl install ds
