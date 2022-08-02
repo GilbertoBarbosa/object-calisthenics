@@ -4,6 +4,7 @@ namespace Alura\Calisthenics\Domain\Student;
 
 use Alura\Calisthenics\Domain\Video\Video;
 use Alura\Calisthenics\Domain\Email\Email;
+use Alura\Calisthenics\Domain\Student\FullName;
 use DateTimeInterface;
 use Ds\Map;
 
@@ -14,35 +15,33 @@ class Student
     private Email $email;
     private DateTimeInterface $birthDate;
     private WatchedVideos $watchedVideos;
-    private string $firstName;
-    private string $lastName;
     public string $street;
     public string $number;
     public string $province;
     public string $city;
     public string $state;
     public string $country;
+    private FullName $fullname;
 
     public function __construct(Email $email, DateTimeInterface $birthDate, 
-                    string $firstName, string $lastName, string $street, string $number, 
+                    FullName $fullname, string $street, string $number, 
                     string $province, string $city, string $state, string $country)
     {
         $this->watchedVideos = new Map();
         $this->email = $email;
         $this->bd = $birthDate;
-        $this->fName = $firstName;
-        $this->lName = $lastName;
         $this->street = $street;
         $this->number = $number;
         $this->province = $province;
         $this->city = $city;
         $this->state = $state;
         $this->country = $country;
+        $this->fullName = $fullname;
     }
 
     public function fullName(): string
     {
-        return "{$this->fName} {$this->lName}";
+        return (string) $this->fullName();
     }
 
     public function Email(): Email

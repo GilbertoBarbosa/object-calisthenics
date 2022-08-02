@@ -15,6 +15,10 @@
 
 7. Nunca abrevie
 
+8. Mantenha suas classes e pacotes pequenos
+
+9. Tenha no máximo 2 propriedades por classe
+
 
 ## Instalar php-ds
 pecl install ds
